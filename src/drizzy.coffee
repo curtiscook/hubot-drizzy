@@ -190,22 +190,12 @@ quotes = [
 ]
 
 module.exports = (robot) ->
-  robot.respond /simpsons quote me\b/i, (msg) ->
-     msg.send msg.random quotes
+  robot.respond /drizzy quote me\b/i, (msg) ->
+      msg.send msg.random quotes
 
-  robot.respond /simpsons image me\b/i, (msg) ->
-      simpsonMe(msg, 1)
-   
-  robot.respond /simpsons version\b/i, (msg) ->
+  robot.respond /drake quote me\b/i, (msg) ->
+      msg.send msg.random quotes
+
+  robot.respond /drizzy version\b/i, (msg) ->
       msg.send require('../package').version
-
-    simpsonMe = (msg, num) ->
-      msg.http("https://api.imgur.com/3/gallery/r/TheSimpsons.json")
-       .headers(Authorization: 'Client-ID 8e4f0ec64cc27f6')
-       .get() (err, res, body) ->
-         content = JSON.parse(body)
-         if content.data and content.data.length > 0
-           msg.send (msg.random content.data).link
-         else
-           msg.send "D'oh!  No response from Imgur."
 
