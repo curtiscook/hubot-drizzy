@@ -1,25 +1,19 @@
 {
-  "name": "hubot-thesimpsons",
-  "description": "A hubot script to show some Simpsone quotes or  imgur.com/r/TheSimpsons images",
+  "name": "hubot-drizzy",
+  "description": "A hubot script to show some Drake Quotes",
   "version": "1.1.4",
-  "author": "JJ Asghar <jjasghar@gmail.com>",
+  "author": "C Cook",
   "license": "MIT",
-  "contributors": [
-    {
-      "name": "Omar Delarosa",
-      "email": "thedelarosa@gmail.com"
-    }
-  ],
   "keywords": [
     "hubot",
     "hubot-scripts"
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:hubot-scripts/hubot-thesimpsons.git"
+    "url": "git@github.com:curtiscook/hubot-drizzy.git"
   },
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-thesimpsons/issues"
+    "url": "https://github.com/curtiscook/hubot-drizzy/issues"
   },
   "dependencies": {
     "coffee-script": "~1.6"
@@ -32,6 +26,6 @@
   },
   "main": "index.coffee",
   "scripts": {
-    "test": "mocha -R spec --compilers coffee:coffee-script test/thesimpsons.coffee"
+    "test": "mocha -R spec --compilers coffee:coffee-script test/drizzy.coffee"
   }
 }
