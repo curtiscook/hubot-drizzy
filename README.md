@@ -22,6 +22,6 @@ Add **hubot-drizzy** to your `external-scripts.json`:
 ["hubot-drizzy"]
 ```
 
-Run `npm install hubot-thesimpsons`
+Run `npm install hubot-drizzy`
 
 
